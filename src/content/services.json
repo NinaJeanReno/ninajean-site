@@ -1,0 +1,76 @@
+{
+  "services": [
+    {
+      "slug": "restoration",
+      "title": "Restoration Services",
+      "description": "Our restoration services help Calgary homeowners and businesses recover from unexpected damage. Whether you're dealing with water damage, fire damage, or general wear and tear, our experienced team provides comprehensive restoration solutions.",
+      "image": "/assets/services/restoration.jpg"
+    },
+    {
+      "slug": "painting",
+      "title": "Painting (Interior & Exterior)",
+      "description": "Transform your Calgary home or business with our professional painting services. We deliver flawless results for both interior and exterior projects, using premium paints and proven techniques.",
+      "image": "/assets/services/painting.jpg"
+    },
+    {
+      "slug": "concrete",
+      "title": "Concrete Services",
+      "description": "Ninajean provides comprehensive concrete services for Calgary properties. From new installations to repairs, we deliver durable, professional results that withstand our harsh Canadian winters.",
+      "image": "/assets/services/concrete.jpg"
+    },
+    {
+      "slug": "drywall",
+      "title": "Drywall & Taping",
+      "description": "Expert drywall installation and finishing services for Calgary homes and businesses. Whether you're finishing a basement, repairing damage, or building new walls, our team delivers smooth, professional results.",
+      "image": "/assets/services/drywall.jpg"
+    },
+    {
+      "slug": "flooring",
+      "title": "Flooring Installation",
+      "description": "Transform your Calgary home with beautiful new flooring from Ninajean. We install all types of flooring including hardwood, laminate, vinyl, tile, and carpet with precision and care.",
+      "image": "/assets/services/flooring.jpg"
+    },
+    {
+      "slug": "renovations",
+      "title": "Renovations & Remodeling",
+      "description": "Complete renovation and remodeling services for Calgary homeowners. Whether you're updating a kitchen, renovating a bathroom, or finishing a basement, Ninajean manages your project from start to finish.",
+      "image": "/assets/services/renovations.jpg"
+    },
+    {
+      "slug": "demolition",
+      "title": "Light Demolition",
+      "description": "Safe and efficient light demolition services for Calgary renovation projects. We carefully remove walls, fixtures, flooring, and other elements to prepare your space for renovation.",
+      "image": "/assets/services/demolition.jpg"
+    },
+    {
+      "slug": "carpentry",
+      "title": "Finish Carpentry",
+      "description": "Elevate your Calgary home with expert finish carpentry from Ninajean. We specialize in the detailed woodwork that adds character and value — trim, moldings, built-ins, and custom features.",
+      "image": "/assets/services/carpentry.jpg"
+    },
+    {
+      "slug": "doors-windows",
+      "title": "Doors & Windows Installation",
+      "description": "Professional door and window installation services for Calgary homes and businesses. We install interior doors, entry doors, patio doors, and windows of all types.",
+      "image": "/assets/services/doors-windows.jpg"
+    },
+    {
+      "slug": "siding",
+      "title": "Siding & Exterior Work",
+      "description": "Protect and beautify your Calgary property with professional siding and exterior services from Ninajean. We install, repair, and replace siding, fascia, soffit, and other exterior elements.",
+      "image": "/assets/services/siding.jpg"
+    },
+    {
+      "slug": "decks-fences",
+      "title": "Decks & Fences",
+      "description": "Create your perfect outdoor living space with custom deck and fence construction from Ninajean. We design and build beautiful, functional outdoor structures for Calgary homes.",
+      "image": "/assets/services/decks.jpg"
+    },
+    {
+      "slug": "cleaning",
+      "title": "Cleaning Services",
+      "description": "Keep your Calgary home or business spotless with professional cleaning services from Ninajean. We provide thorough, reliable cleaning for residential and commercial properties.",
+      "image": "/assets/services/cleaning.jpg"
+    }
+  ]
+}

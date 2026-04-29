@@ -1,0 +1,32 @@
+backend:
+  name: github
+  repo: NinaJeanReno/ninajean-site
+  branch: main
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "Business Info"
+        name: "info"
+        file: "src/content/info.json"
+        fields:
+          - { label: "Phone Number", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Hero Tagline", name: "tagline", widget: "string" }
+          - { label: "Address", name: "address", widget: "string" }
+
+      - label: "Services"
+        name: "services"
+        file: "src/content/services.json"
+        fields:
+          - label: "Services List"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Service Title", name: "title", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+              - { label: "Image", name: "image", widget: "image", required: false }
