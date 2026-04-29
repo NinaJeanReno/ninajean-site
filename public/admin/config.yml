@@ -2,6 +2,9 @@ backend:
   name: git-gateway
   branch: main
 
+site_url: https://starlit-tulumba-13313b.netlify.app
+display_url: https://starlit-tulumba-13313b.netlify.app
+
 media_folder: public/images
 public_folder: /images
 
