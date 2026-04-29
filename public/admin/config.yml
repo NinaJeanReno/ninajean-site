@@ -1,6 +1,9 @@
 backend:
   name: git-gateway
   branch: main
+  identity_url: https://starlit-tulumba-13313b.netlify.app/.netlify/identity
+  gateway_url: https://starlit-tulumba-13313b.netlify.app/.netlify/git
+  squash_merges: true
 
 site_url: https://starlit-tulumba-13313b.netlify.app
 display_url: https://starlit-tulumba-13313b.netlify.app
