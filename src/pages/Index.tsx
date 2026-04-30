@@ -1,3 +1,4 @@
+import info from "@/content/info.json";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Phone, ArrowRight, CheckCircle, Star, MapPin } from "lucide-react";
@@ -125,8 +126,8 @@ export default function Index() {
               Serving Calgary & Surrounding Areas
             </div>
             <h1 className="font-heading text-3xl font-bold leading-tight text-background sm:text-4xl md:text-5xl lg:text-6xl">
-              Professional Maintenance & Renovation Services in Calgary, Alberta
-            </h1>
+  {info.tagline}
+</h1>
             <p className="mt-6 text-lg text-background/80 md:text-xl">
               Reliable, high-quality construction and renovation solutions for homes and small
               businesses.
@@ -139,10 +140,10 @@ export default function Index() {
                 </Link>
               </Button>
               <Button variant="hero-outline" size="xl" asChild>
-                <a href="tel:+15872232483">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call Now
-                </a>
+                <a href={`tel:${info.phone.replace(/\s+/g, '')}`}>
+  <Phone className="mr-2 h-5 w-5" />
+  Call Now
+</a>
               </Button>
             </div>
           </div>

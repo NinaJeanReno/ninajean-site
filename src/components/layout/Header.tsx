@@ -1,3 +1,4 @@
+import info from "@/content/info.json";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
@@ -127,7 +128,7 @@ export function Header() {
           {/* Desktop CTAs */}
           <div className="hidden items-center gap-3 lg:flex">
             <Button variant="ghost" size="sm" asChild>
-              <a href="tel:+15872232483" className="gap-2">
+              <a href={`tel:${info.phone.replace(/\s+/g, '')}`} className="gap-2">
                 <Phone className="h-4 w-4" />
                 <span className="hidden xl:inline">Call Now</span>
               </a>
@@ -140,7 +141,7 @@ export function Header() {
           {/* Mobile Menu Button */}
           <div className="flex items-center gap-2 lg:hidden">
             <Button variant="default" size="sm" asChild>
-              <a href="tel:+15872232483">
+              <a href={`tel:${info.phone.replace(/\s+/g, '')}`}>
                 <Phone className="h-4 w-4" />
               </a>
             </Button>

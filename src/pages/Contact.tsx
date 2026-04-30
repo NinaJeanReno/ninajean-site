@@ -1,3 +1,4 @@
+import info from "@/content/info.json";
 import { Layout } from "@/components/layout/Layout";
 import { EstimateForm } from "@/components/forms/EstimateForm";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
@@ -37,11 +38,11 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold">Phone</h3>
                     <a
-                      href="tel:+15872232483"
-                      className="mt-1 block text-body hover:text-primary"
-                    >
-                      +1 587-223-2483
-                    </a>
+                      href={`tel:${info.phone.replace(/\s+/g, '')}`}
+  className="mt-1 block text-body hover:text-primary"
+>
+  {info.phone}
+</a>
                   </div>
                 </div>
 
@@ -52,11 +53,11 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold">Email</h3>
                     <a
-                      href="mailto:nj.maintenance.reno@gmail.com"
-                      className="mt-1 block text-body hover:text-primary"
-                    >
-                      nj.maintenance.reno@gmail.com
-                    </a>
+                     href={`mailto:${info.email}`}
+  className="mt-1 block text-body hover:text-primary"
+>
+  {info.email}
+</a>
                   </div>
                 </div>
 
