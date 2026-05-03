@@ -4,83 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { X } from "lucide-react";
 
-// Project images
-import projectKitchen from "@/assets/projects/project-kitchen.jpg";
-import projectBasement from "@/assets/projects/project-basement.jpg";
-import projectExteriorPainting from "@/assets/projects/project-exterior-painting.jpg";
-import projectDeck from "@/assets/projects/project-deck.jpg";
-import projectBathroom from "@/assets/projects/project-bathroom.jpg";
-import projectDriveway from "@/assets/projects/project-driveway.jpg";
-import projectInteriorPainting from "@/assets/projects/project-interior-painting.jpg";
-import projectFence from "@/assets/projects/project-fence.jpg";
-import projectFlooring from "@/assets/projects/project-flooring.jpg";
-
-const projects = [
-  {
-    id: 1,
-    title: "Kitchen Renovation",
-    category: "Renovations",
-    location: "Calgary NW",
-    image: projectKitchen,
-  },
-  {
-    id: 2,
-    title: "Basement Development",
-    category: "Renovations",
-    location: "Airdrie",
-    image: projectBasement,
-  },
-  {
-    id: 3,
-    title: "Exterior Painting",
-    category: "Painting",
-    location: "Calgary SW",
-    image: projectExteriorPainting,
-  },
-  {
-    id: 4,
-    title: "Deck Construction",
-    category: "Decks & Fences",
-    location: "Cochrane",
-    image: projectDeck,
-  },
-  {
-    id: 5,
-    title: "Bathroom Remodel",
-    category: "Renovations",
-    location: "Calgary SE",
-    image: projectBathroom,
-  },
-  {
-    id: 6,
-    title: "Driveway Replacement",
-    category: "Concrete",
-    location: "Calgary NE",
-    image: projectDriveway,
-  },
-  {
-    id: 7,
-    title: "Interior Painting",
-    category: "Painting",
-    location: "Okotoks",
-    image: projectInteriorPainting,
-  },
-  {
-    id: 8,
-    title: "Fence Installation",
-    category: "Decks & Fences",
-    location: "Calgary NW",
-    image: projectFence,
-  },
-  {
-    id: 9,
-    title: "Flooring Installation",
-    category: "Flooring",
-    location: "Chestermere",
-    image: projectFlooring,
-  },
-];
-
+import projectsData from "@/content/projects.json";
+const projects = projectsData.projects.map((p, i) => ({ ...p, id: i + 1 }));
 export default function Projects() {
   const [selectedImage, setSelectedImage] = useState<{
     image: string;

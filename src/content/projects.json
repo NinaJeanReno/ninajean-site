@@ -2,33 +2,57 @@
   "projects": [
     {
       "title": "Kitchen Renovation",
-      "location": "Calgary, AB",
-      "image": "/images/projects/kitchen-renovation.jpg"
+      "category": "Renovations",
+      "location": "Calgary NW",
+      "image": "/images/projects/project-kitchen.jpg"
     },
     {
-      "title": "Interior Painting",
-      "location": "Airdrie, AB",
-      "image": "/images/projects/living-room-painting.jpg"
+      "title": "Basement Development",
+      "category": "Renovations",
+      "location": "Airdrie",
+      "image": "/images/projects/project-basement.jpg"
     },
     {
-      "title": "Deck & Fence",
-      "location": "Calgary, AB",
-      "image": "/images/projects/deck-installation.jpg"
+      "title": "Exterior Painting",
+      "category": "Painting",
+      "location": "Calgary SW",
+      "image": "/images/projects/project-exterior-painting.jpg"
     },
     {
-      "title": "Basement Finishing",
-      "location": "Cochrane, AB",
-      "image": "/images/projects/basement-renovation.jpg"
+      "title": "Deck Construction",
+      "category": "Decks & Fences",
+      "location": "Cochrane",
+      "image": "/images/projects/project-deck.jpg"
     },
     {
       "title": "Bathroom Remodel",
-      "location": "Calgary, AB",
-      "image": "/images/projects/bathroom-renovation.jpg"
+      "category": "Renovations",
+      "location": "Calgary SE",
+      "image": "/images/projects/project-bathroom.jpg"
     },
     {
-      "title": "Siding Installation",
-      "location": "Okotoks, AB",
-      "image": "/images/projects/siding-exterior.jpg"
+      "title": "Driveway Replacement",
+      "category": "Concrete",
+      "location": "Calgary NE",
+      "image": "/images/projects/project-driveway.jpg"
+    },
+    {
+      "title": "Interior Painting",
+      "category": "Painting",
+      "location": "Okotoks",
+      "image": "/images/projects/project-interior-painting.jpg"
+    },
+    {
+      "title": "Fence Installation",
+      "category": "Decks & Fences",
+      "location": "Calgary NW",
+      "image": "/images/projects/project-fence.jpg"
+    },
+    {
+      "title": "Flooring Installation",
+      "category": "Flooring",
+      "location": "Chestermere",
+      "image": "/images/projects/project-flooring.jpg"
     }
   ]
 }
