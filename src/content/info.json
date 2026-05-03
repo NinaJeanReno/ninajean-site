@@ -2,5 +2,7 @@
   "phone": "+1 587-223-2483",
   "email": "nj.maintenance.reno@gmail.com",
   "tagline": "Calgary's Trusted Maintenance & Renovation Experts",
-  "address": "5602 4 St NW Suite 8, Calgary, AB T2K 1B2"
+  "address": "5602 4 St NW Suite 8, Calgary, AB T2K 1B2",
+  "logo": "/images/logo.jpeg",
+  "hero_image": "/images/hero-bg.jpg"
 }

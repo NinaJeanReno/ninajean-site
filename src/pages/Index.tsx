@@ -17,24 +17,9 @@ import {
   Truck,
   Ruler,
 } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import projects from "@/content/projects.json";
 
-// Project images
-import kitchenProject from "@/assets/projects/kitchen-renovation.jpg";
-import livingRoomProject from "@/assets/projects/living-room-painting.jpg";
-import deckProject from "@/assets/projects/deck-installation.jpg";
-import basementProject from "@/assets/projects/basement-renovation.jpg";
-import bathroomProject from "@/assets/projects/bathroom-renovation.jpg";
-import sidingProject from "@/assets/projects/siding-exterior.jpg";
-
-const recentProjects = [
-  { image: kitchenProject, title: "Kitchen Renovation", location: "Calgary, AB" },
-  { image: livingRoomProject, title: "Interior Painting", location: "Airdrie, AB" },
-  { image: deckProject, title: "Deck & Fence", location: "Calgary, AB" },
-  { image: basementProject, title: "Basement Finishing", location: "Cochrane, AB" },
-  { image: bathroomProject, title: "Bathroom Remodel", location: "Calgary, AB" },
-  { image: sidingProject, title: "Siding Installation", location: "Okotoks, AB" },
-];
+const recentProjects = projects.projects;
 
 const services = [
   { name: "Restoration Services", icon: Construction, href: "/services/restoration" },
@@ -114,9 +99,9 @@ export default function Index() {
       {/* Hero Section */}
       <section className="relative min-h-[600px] lg:min-h-[700px]">
         <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroBg})` }}
-        >
+  className="absolute inset-0 bg-cover bg-center"
+  style={{ backgroundImage: `url(${info.hero_image})` }}
+>
           <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/70 to-foreground/40" />
         </div>
         <div className="container-custom relative z-10 flex min-h-[600px] items-center py-16 lg:min-h-[700px]">

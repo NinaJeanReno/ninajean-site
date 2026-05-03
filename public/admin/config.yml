@@ -23,6 +23,8 @@ collections:
           - { label: "Email", name: "email", widget: "string" }
           - { label: "Hero Tagline", name: "tagline", widget: "string" }
           - { label: "Address", name: "address", widget: "string" }
+          - { label: "Logo", name: "logo", widget: "image" }
+          - { label: "Hero Background Image", name: "hero_image", widget: "image" }
 
       - label: "Services"
         name: "services"
@@ -32,6 +34,19 @@ collections:
             name: "services"
             widget: "list"
             fields:
+              - { label: "Slug", name: "slug", widget: "string" }
               - { label: "Service Title", name: "title", widget: "string" }
               - { label: "Description", name: "desc", widget: "text" }
-              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Image", name: "image", widget: "image" }
+
+      - label: "Projects"
+        name: "projects"
+        file: "src/content/projects.json"
+        fields:
+          - label: "Projects List"
+            name: "projects"
+            widget: "list"
+            fields:
+              - { label: "Project Title", name: "title", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }

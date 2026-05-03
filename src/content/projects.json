@@ -1,0 +1,34 @@
+{
+  "projects": [
+    {
+      "title": "Kitchen Renovation",
+      "location": "Calgary, AB",
+      "image": "/images/projects/kitchen-renovation.jpg"
+    },
+    {
+      "title": "Interior Painting",
+      "location": "Airdrie, AB",
+      "image": "/images/projects/living-room-painting.jpg"
+    },
+    {
+      "title": "Deck & Fence",
+      "location": "Calgary, AB",
+      "image": "/images/projects/deck-installation.jpg"
+    },
+    {
+      "title": "Basement Finishing",
+      "location": "Cochrane, AB",
+      "image": "/images/projects/basement-renovation.jpg"
+    },
+    {
+      "title": "Bathroom Remodel",
+      "location": "Calgary, AB",
+      "image": "/images/projects/bathroom-renovation.jpg"
+    },
+    {
+      "title": "Siding Installation",
+      "location": "Okotoks, AB",
+      "image": "/images/projects/siding-exterior.jpg"
+    }
+  ]
+}

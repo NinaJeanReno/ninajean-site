@@ -2,7 +2,7 @@ import info from "@/content/info.json";
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Search, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo.jpeg";
+
 
 const services = [
   { name: "Restoration Services", href: "/services/restoration" },
@@ -75,10 +75,10 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link to="/" className="inline-block">
               <img
-                src={logo}
-                alt="Nina Jean Maintenance Renovation Ltd"
-                className="h-16 w-auto bg-white rounded-lg p-1"
-              />
+  src={info.logo}
+  alt="Nina Jean Maintenance Renovation Ltd"
+  className="h-16 w-auto bg-white rounded-lg p-1"
+/>
             </Link>
             <p className="mt-4 text-sm text-background/70">
               Professional maintenance and renovation services in Calgary, Alberta. Quality

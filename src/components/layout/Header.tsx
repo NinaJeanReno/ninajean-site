@@ -12,7 +12,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/logo.jpeg";
+
 
 const services = [
   { name: "Restoration Services", href: "/services/restoration" },
@@ -56,10 +56,10 @@ export function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 shrink-0">
             <img
-              src={logo}
-              alt="Nina Jean Maintenance Renovation Ltd"
-              className="h-12 w-auto md:h-14"
-            />
+  src={info.logo}
+  alt="Nina Jean Maintenance Renovation Ltd"
+  className="h-12 w-auto md:h-14"
+/>
           </Link>
 
           {/* Desktop Navigation */}
