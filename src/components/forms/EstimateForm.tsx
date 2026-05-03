@@ -13,7 +13,6 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { CheckCircle, Loader2 } from "lucide-react";
 
-import { API_URL } from "@/config";
 
 const services = [
   "Restoration Services",
@@ -54,7 +53,7 @@ export function EstimateForm({ preselectedService, compact = false }: EstimateFo
     contactMethod: "",
   });
 
-  const handleSubmit = async (e: React.FormEvent) => {
+ const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!consent) return;
 
@@ -62,19 +61,19 @@ export function EstimateForm({ preselectedService, compact = false }: EstimateFo
     setError(null);
 
     try {
-      const response = await fetch(`${API_URL}/quotes`, {
+      const response = await fetch("/", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({
+          "form-name": "estimate",
+          ...formData,
+        }).toString(),
       });
 
-      if (!response.ok) throw new Error("Failed to submit request");
-
+      if (!response.ok) throw new Error("Failed to submit");
       setSubmitted(true);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "An error occurred");
+      setError("Something went wrong. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -95,7 +94,9 @@ export function EstimateForm({ preselectedService, compact = false }: EstimateFo
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-4" name="estimate" data-netlify="true" netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="estimate" />
+  <input type="hidden" name="bot-field" />
       <div className={compact ? "space-y-4" : "grid gap-4 md:grid-cols-2"}>
         {/* Full Name */}
         <div className="space-y-2">
