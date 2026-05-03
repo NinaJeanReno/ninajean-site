@@ -48,5 +48,21 @@ collections:
             widget: "list"
             fields:
               - { label: "Project Title", name: "title", widget: "string" }
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options:
+                  - "Renovations"
+                  - "Painting"
+                  - "Concrete"
+                  - "Decks & Fences"
+                  - "Flooring"
+                  - "Restoration"
+                  - "Drywall"
+                  - "Carpentry"
+                  - "Doors & Windows"
+                  - "Siding"
+                  - "Cleaning"
+                  - "Demolition"
               - { label: "Location", name: "location", widget: "string" }
               - { label: "Image", name: "image", widget: "image" }
