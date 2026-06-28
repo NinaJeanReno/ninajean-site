@@ -190,17 +190,10 @@ export function Footer() {
               Serving Calgary & Surrounding Areas
             </p>
           </div>
-          {/* Created By Credit */}
+{/* Created By Credit */}
 <div className="mt-4 text-center">
   <p className="text-sm text-background/50">
-    
-      href="https://www.sparservices.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-primary hover:underline"
-    >
-      Created by SPAR Services
-    </a>
+    <a href="https://www.sparservices.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Created by SPAR Services</a>
   </p>
 </div>
         </div>
