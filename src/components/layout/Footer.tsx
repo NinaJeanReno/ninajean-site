@@ -191,18 +191,18 @@ export function Footer() {
             </p>
           </div>
           {/* Created By Credit */}
-          <div className="mt-4 text-center">
-            <p className="text-sm text-background/50">
-              <a
-                href="https://rcwinnovation.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:underline"
-              >
-                Website developed by Rcw Innovation
-              </a>
-            </p>
-          </div>
+<div className="mt-4 text-center">
+  <p className="text-sm text-background/50">
+    
+      href="https://www.sparservices.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-primary hover:underline"
+    >
+      Created by SPAR Services
+    </a>
+  </p>
+</div>
         </div>
       </div>
     </footer>
